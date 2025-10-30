@@ -8,7 +8,7 @@ btn.addEventListener("click", () => {
 
     // Hide the selected option
     if (selectedValue !== "") {
-        selectedOption.style.display = "none";
+        option.remove(option.selectedIndex);
         option.selectedIndex = 0; // reset dropdown to default
     }
 });
